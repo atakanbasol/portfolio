@@ -1,0 +1,41 @@
+/*
+    PROJECT
+        -name: Portfolio                                            Bu bölümde Standert bir tanımlama yapıyorum
+        -created date: 14 Şubat 2023
+        -author: Atakan Başol
+        -version: V.1
+*/
+
+/*###############################################################################*/
+/* base configuration */
+/* Temel Yapılar */
+/* ROOT */
+:root {
+    /* Değişken yapılarını oluşturuyoruz. */
+    --portfolio-bg: #f2f2f2;
+    --portfolio-color: black;
+    --max-width: 100%;
+    /* Elemanın maksimum alacağı genişliği belirledik.(max-width: 100%;)*/
+}
+
+/*###############################################################################*/
+/* COMMON */
+* {
+    margin: 0 px;
+    padding: 0;
+    box-sizing: border-box;
+    /* Taşmalar olmaması için (box-sizing: border-box;)*/
+}
+
+html {
+    font-size: 15px;
+    transition: 1.2s all;
+    /*Animasyonlu yapılar için (transition: 1.2s all;)*/
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    /* rem ==> 1.1 * font-size için */
+}
