@@ -16,6 +16,9 @@
     --portfolio-color: black;
     --max-width: 100%;
     /* Elemanın maksimum alacağı genişliği belirledik.(max-width: 100%;)*/
+    --img-max-width: 100%;
+    --img-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .9);
+    --icon-size: 1.4rem;
 }
 
 /*###############################################################################*/
@@ -38,4 +41,69 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.1rem;
     /* rem ==> 1.1 * font-size için */
+    background-color: var(--portfolio-bg);
+    color: var(--portfolio-color);
+    line-height: 1.5;
+    /* satır aralıklarını belirler. */
+    position: relative;
 }
+
+a {
+    text-decoration: none;
+    /* metindeki biçimlendirmeleri ayarlamak veya kaldırmak için kullanılır. Bu özelliği genelde linklerde ki alt çizgiyi kaldırmak için kullanırız. */
+}
+
+ul {
+    list-style-type: none;
+    /* list-style-type: none; ile liste işaretlerini kaldırıyoruz. */
+}
+
+p {
+    text-align: justify !important;
+    /*  her satırın genişliği eşit olacak ve sol ve sağ kenar boşlukları düz olacak şekilde uzatılır. */
+    padding: 1.5rem;
+}
+
+img {
+    max-width: var(--img-max-width);
+}
+
+img:hover {
+    box-shadow: var(--img-box-shadow);
+    cursor: pointer;
+    /* İmlecin linkte olduğu gibi el şeklinde gözükmesini sağlar  */
+}
+
+i {
+    font-size: var(--icon-size);
+}
+
+.line-clamp4 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp6 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp8 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp10 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+}
+
+/*################################################################################*/
