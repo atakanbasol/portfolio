@@ -12,7 +12,7 @@
 /* ROOT */
 :root {
     /* Değişken yapılarını oluşturuyoruz. */
-    --portfolio-bg: #f2f2f2;
+    --portfolio-bg: #e1d2d2;
     --portfolio-color: black;
     --max-width: 100%;
     /* Elemanın maksimum alacağı genişliği belirledik.(max-width: 100%;)*/
@@ -107,3 +107,9 @@ i {
 }
 
 /*################################################################################*/
+
+/* dark Light Mode */
+.dark_mode {
+    background-color: var(--portfolio-color);
+    color: var(--portfolio-bg);
+}

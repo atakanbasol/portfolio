@@ -51,7 +51,50 @@
     <!-- start codes -->
 
     <!-- navbar start -->
-    <nav id="navbar_id"></nav>
+    <nav id="navbar_id" class="fixed-top navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-wallet"></i>PORTFOLIO</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page"><i
+                                class="fa-sharp fa-solid fa-house"></i> Anasayfa<span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page"><i
+                                class="fa-sharp fa-solid fa-address-card"></i> Hakkımızda<span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-sharp fa-solid fa-address-card"></i> Hakkımızda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Giriş Yap</a>
+                            <a class="dropdown-item" href="#">Kayıt Ol</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick="darkLight()" class="nav-link" href="#"><i
+                                class="fa-sharp fa-solid fa-lightbulb"></i></a>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input type="text" id="tags" class="form-control me-sm-2" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
     <!-- navbar end -->
 
     <!-- header start -->
@@ -77,7 +120,7 @@
         </script>
 
     <!-- external JS -->
-    <script src="js/template.js"></script>
+    <script src="js/portfolio.js"></script>
 </body>
 
 </html>
